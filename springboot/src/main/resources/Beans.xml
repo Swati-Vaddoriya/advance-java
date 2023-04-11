@@ -6,15 +6,10 @@
 
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="address" class="com.codemind.springboot.Address" p:houseNo="301" p:street="River Heavenao" p:city="Surat" />
+	<bean id="addressBean" class="com.codemind.springboot.Address" p:houseNo="301" p:street="River Heavenao" p:city="Surat" />
 
-	<bean id="student" class="com.codemind.springboot.Student">
-		<property name="studentId">
-			<value>18</value>
-		</property>
-		<property name="address" ref="address" />
-		<property name="name" value="Swati Vaddoriya" />
-	</bean>
+	<bean id="student" class="com.codemind.springboot.Student" p:studentId="18" p:address-ref="addressBean" p:name="Swati Vaddoriya" />
+
 	
 	<bean id="employee" class="com.codemind.springboot.Employee">
 		<property name="empId" value="786" />

@@ -9,7 +9,7 @@ public class App {
 //		Student student = new Student(10, "Swati", address);
 //		System.out.println(student);
 		ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
-		Address address = (Address) context.getBean("address");
+		Address address = (Address) context.getBean("addressBean");
 		System.out.println(address);
 
 		Student student = (Student) context.getBean("student");

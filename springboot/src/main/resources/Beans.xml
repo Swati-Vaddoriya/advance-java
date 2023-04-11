@@ -12,7 +12,6 @@
 		<property name="studentId">
 			<value>18</value>
 		</property>
-		<property name="studentId" value="18" />
 		<property name="address" ref="address" />
 		<property name="name" value="Swati Vaddoriya" />
 	</bean>
@@ -22,5 +21,31 @@
 		<property name="name" value="Swati Vaddoriya" />
 		<property name="department" value="Management" />
 		<property name="salary" value="60000" />
+	</bean>
+	
+	<bean id="collection" class="com.codemind.springboot.PrimitiveTypesPojo">
+		<property name="list">
+			<list>
+				<value>10</value>
+				<value>20</value>
+				<value>30</value>
+				<value>40</value>
+			</list>
+		</property>
+		<property name="set">
+			<set>
+				<value>10</value>
+				<value>20</value>
+				<value>10</value>
+				<value>20</value>
+				<value>30</value>
+			</set>
+		</property>
+		<property name="map">
+			<map>
+				<entry key="name" value="Swati" />
+				<entry key="course" value="Java" />
+			</map>
+		</property>
 	</bean>
 </beans>

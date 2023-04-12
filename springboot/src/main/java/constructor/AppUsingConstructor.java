@@ -15,10 +15,5 @@ public class AppUsingConstructor {
 		Person person = (Person) context2.getBean("person");
 		System.out.println(person);
 		
-//		OUTPUT
-//		School [number=101, name=P.P.Savani]
-//		Parameterized school
-//		Parameterized person
-//		Person [personId=18, name=Swati, school=School [number=101, name=P.P.Savani]]
 	}
 }

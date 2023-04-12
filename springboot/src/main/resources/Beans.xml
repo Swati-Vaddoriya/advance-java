@@ -19,12 +19,12 @@
 	<bean id="student" class="com.codemind.springboot.Student" p:studentId="18" p:address-ref="addressBean" p:name="Swati Vaddoriya" />
 
 	
-	<bean id="employee" class="com.codemind.springboot.Employee">
+	<bean id="employee" class="com.codemind.springboot.Employee" autowire="byName">
 		<property name="empId" value="786" />
 		<property name="name" value="Swati Vaddoriya" />
 		<property name="department" value="Management" />
 		<property name="salary" value="60000" />
-		<property name="address" ref="address" />
+		<!--<property name="address" ref="address" />-->
 	</bean>
 	
 	<bean id="collection" class="com.codemind.springboot.PrimitiveTypesPojo">

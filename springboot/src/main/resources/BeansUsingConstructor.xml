@@ -2,14 +2,17 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 
-	xmlns:p="http://www.springframework.org"
-
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	
-	<bean id="person" class="com.codemind.springboot.Person">
+
+	<bean id="school" class="constructor.School">
+		<constructor-arg value="101"/>
+		<constructor-arg value="P.P.Savani"/>
+	</bean>
+	<bean id="person" class="constructor.Person">
 		<constructor-arg value="18" type="int"/>
 		<constructor-arg value="Swati"/>
+		<constructor-arg ref="school"/>
 	</bean>
 
 </beans>

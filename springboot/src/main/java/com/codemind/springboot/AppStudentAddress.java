@@ -3,7 +3,7 @@ package com.codemind.springboot;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MyApp {
+public class AppStudentAddress {
 	private static ApplicationContext context;
 
 	public static void main(String[] args) {

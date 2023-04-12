@@ -15,7 +15,7 @@ public class NullAppTest {
 		employee.employeeGreetings();
 		System.out.println(employee);
 
-		Employee emp = new Employee(121, "Swara", "Health", 100000);
+		Employee emp = new Employee(121, "Swara", "Health", 100000, null);
 		emp = null;
 		emp.employeeGreetings();
 		System.out.println(emp);

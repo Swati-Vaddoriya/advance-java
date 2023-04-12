@@ -1,13 +1,14 @@
 package com.codemind.springboot;
 
 public class Employee {
-	@Override
+
+@Override
 	public String toString() {
 		return "Employee [empId=" + empId + ", name=" + name + ", department=" + department + ", salary=" + salary
-				+ "]";
+				+ ",\n address=" + address + "]";
 	}
-	
-//	public void employeeGreetings(){
+
+		//	public void employeeGreetings(){
 		public static void employeeGreetings(){
 		System.out.println("Employee Greetings..!");
 	}
@@ -16,18 +17,28 @@ public class Employee {
 		super();
 	}
 
-	public Employee(int empId, String name, String department, int salary) {
+	public Employee(int empId, String name, String department, int salary, Address address) {
 		super();
 		this.empId = empId;
 		this.name = name;
 		this.department = department;
 		this.salary = salary;
+		this.address = address;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
 	int empId;
 	String name;
 	String department;
 	int salary;
+	public Address address;
 
 	public int getEmpId() {
 		return empId;

@@ -10,6 +10,8 @@ public class MyApp {
 		context = new ClassPathXmlApplicationContext("Beans.xml");
 
 		System.out.println();
+		Address address = (Address) context.getBean("empAddress");
+		System.out.println(address);
 		Employee employee = (Employee) context.getBean("employee");
 		System.out.println(employee);
 

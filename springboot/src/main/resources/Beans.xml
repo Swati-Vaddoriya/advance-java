@@ -3,10 +3,18 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 
 	xmlns:p="http://www.springframework.org"
+	xmlns:c="http://www.springframework.org"
 
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="addressBean" class="com.codemind.springboot.Address" p:houseNo="301" p:street="River Heavenao" p:city="Surat" />
+	<bean id="addressBean" class="com.codemind.springboot.Address" p:houseNo="301" p:street="River Heavena" p:city="Surat" />
+	<bean id="empAddress" class="com.codemind.springboot.Address" c:houseNo="301" c:street="River Heavena" c:city="Surat" />
+
+	<bean id="address" class="com.codemind.springboot.Address">
+		<property name="houseNo" value="18" />
+		<property name="street" value="Pali Hill" />
+		<property name="city" value="Surat" />
+	</bean>
 
 	<bean id="student" class="com.codemind.springboot.Student" p:studentId="18" p:address-ref="addressBean" p:name="Swati Vaddoriya" />
 
@@ -16,6 +24,7 @@
 		<property name="name" value="Swati Vaddoriya" />
 		<property name="department" value="Management" />
 		<property name="salary" value="60000" />
+		<property name="address" ref="address" />
 	</bean>
 	
 	<bean id="collection" class="com.codemind.springboot.PrimitiveTypesPojo">

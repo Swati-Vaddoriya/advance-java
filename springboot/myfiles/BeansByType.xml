@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="byTypePojo" class="autowire.ByTypePojo">
+		<property name="age" value="18" />
+		<property name="number" value="124" />
+	</bean>
+	
+	<bean id="basePojo" class="autowire.BasePojo" autowire="byType">
+		<property name="name" value="Swara"/>
+	</bean>
+	
+</beans>

@@ -1,9 +1,11 @@
 package autowire;
 
 public class BasePojo {
+
+
 	@Override
 	public String toString() {
-		return "BasePojo [btp=" + btp + "]";
+		return "BasePojo [btp=" + btp + ", name=" + name + "]";
 	}
 
 	public ByTypePojo getBtp() {
@@ -15,5 +17,13 @@ public class BasePojo {
 	}
 
 	public ByTypePojo btp;
+	public String name;
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 }

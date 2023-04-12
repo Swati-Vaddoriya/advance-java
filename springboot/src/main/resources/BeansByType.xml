@@ -8,6 +8,8 @@
 		<property name="number" value="124" />
 	</bean>
 	
-	<bean id="basePojo" class="autowire.BasePojo" autowire="byType" />
+	<bean id="basePojo" class="autowire.BasePojo" autowire="byType">
+		<property name="name" value="Swara"/>
+	</bean>
 	
 </beans>

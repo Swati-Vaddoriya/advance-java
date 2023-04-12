@@ -1,9 +1,9 @@
-package constructor;
+package autowire;
 
-public class Person {
+public class Person2 {
 	public int personId;
 	public String name;
-	public School school;
+	public School2 school;
 
 	@Override
 	public String toString() {
@@ -19,7 +19,7 @@ public class Person {
 //		System.out.println("Default Person");
 //	}
 
-	public Person(int personId, String name, School school) {
+	public Person2(int personId, String name, School2 school) {
 		super();
 		System.out.println("Parameterized person");
 		this.personId = personId;

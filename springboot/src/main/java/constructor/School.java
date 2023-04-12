@@ -3,6 +3,8 @@ package constructor;
 public class School {
 	public School() {
 		System.out.println("Default school");
+		this.name = "Mauni";
+		this.number=501;
 
 	}
 
@@ -12,8 +14,8 @@ public class School {
 	}
 
 
-	int number;
-	String name;
+	public int number;
+	public String name;
 
 	public School(int number, String name) {
 		System.out.println("Parameterized school");

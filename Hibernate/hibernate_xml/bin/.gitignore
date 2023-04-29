@@ -1,0 +1,5 @@
+/entity/
+/hibernate.cfg.xml
+/hibernate/
+/new_table.hbm2.xml
+/student.hbm.xml

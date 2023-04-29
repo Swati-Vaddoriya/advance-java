@@ -1,0 +1,48 @@
+
+Tomcat configurations:
+
+ISSUES WHILE RUNNING SPRING MVC PROJECT IN TOMCAT
+
+1. Right click project --> maven --> install
+2. Right click project --> run on server --> install
+3. Change the port number if needed
+4. Add Server 
+	1. window --> show view --> server --> Select tomcat server installed by us
+	2. right click -> Run as -> Run configurations -> select server from drop down
+		-> select server -> apply -> run
+	3. Window -> Preferences -> server -> Runtime Environment -> Add
+		-> Apache -> select correct apache tomcat version -> Finish
+		
+	
+5. right click -> properties -> Project Facets -> tick "Dynamic Web Module" 
+	-> Apply and close
+	
+6. right click -> properties -> server -> select tomcat server -> Apply
+
+7. install Web Software
+	Help -> Install new software -> select in work with 
+	"2022-12 - https://download.eclipse.org/releases/2022-12"
+	epand -->   Web, XML, Java EE and OSGi Enterprise Development	
+	Tick all these:
+	    Eclipse Java EE Developer Tools	
+		Eclipse Java Web Developer Tools - JavaScript Support
+		Eclipse Web Developer Tools
+		Eclipse Web JavaScript Developer Tools
+		Eclipse XML Editors and Tools
+		Eclipse XSL Developer Tools
+		JavaScript Development Tools
+		JavaScript Development Tools Chromium/V8 Remote Debugger
+		JST Server Adapters
+		JST Server Adapters Extensions (Apache Tomcat)
+		JST Server UI
+	
+8. Install plugins
+	Help -> Eclipse MarketPlace -> install all these
+	1.Eclipse JST Server Adapters (Apache tomcat, JOanAS, J2EE)Luna
+	2.Eclipse tomcat plugin 9.1.4
+	
+9. Change port in tomcat
+	window -> show view -> server 
+	select server -> double click on 
+	"Tomcat v9.0 Server at localhost (2)"
+	Can change all the properties of server
